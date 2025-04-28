@@ -1,0 +1,12 @@
+Create virtual machines.
+
+1. Create the folder where the virtual machine will be.
+2. Create virtual machine: 
+   python -m venv django_test
+3. Enter to the sub-folder Scripts:
+   activate
+4. Instalar django.
+   pip install django
+5. Return to the root folder of the proyect.
+6. Verify packages of the virtual environment.
+   pip freeze --local
