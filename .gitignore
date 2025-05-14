@@ -3,3 +3,5 @@ Python/Jupyter/.ipynb_checkpoints
 Python/Django/django_env
 Playwright/vm_practices
 Playwright/*/__pycache__
+Playwright/*/*.png
+Playwright/*/*/*.png
