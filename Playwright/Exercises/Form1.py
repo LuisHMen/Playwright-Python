@@ -17,4 +17,4 @@ def test_fill_form(page: Page):
     page.locator("#permanentAddress").fill("Narnia.")
     page.get_by_role("button", name = "Submit").click()
     expect(page.locator("#output")).to_be_visible()
-    page.screenshot(path = "Playwright/Exercises/Form1.png")
+    page.screenshot(path = "Playwright/Exercises/screenshots/Form1.png")

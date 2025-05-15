@@ -34,11 +34,11 @@ def test_form1(page: Page):
     Btn_Enviar.click()
 
     expect(confirmacion).to_be_visible()
-    page.screenshot(path="Playwright/Exercises/inputs_img/SaveForm.png")
+    page.screenshot(path="Playwright/Exercises/screenshots/SaveForm.png")
 
     Btn_Limpiar.click()
-    page.screenshot(path="Playwright/Exercises/inputs_img/CleanForm.png")
+    page.screenshot(path="Playwright/Exercises/screenshots/CleanForm.png")
     
     page.close()
 
-# command to execute: pytest --slowmo 1000 --headed Playwright/Exercises/Inputs.py
+# command to execute: pytest --slowmo 1000 --headed Playwright/Exercises/inputs2.py

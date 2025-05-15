@@ -5,3 +5,4 @@ Playwright/vm_practices
 Playwright/*/__pycache__
 Playwright/*/*.png
 Playwright/*/*/*.png
+Playwright/*/.*

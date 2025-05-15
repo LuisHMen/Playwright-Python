@@ -34,7 +34,7 @@ def test_empty_form(page: Page):
     expect(page.locator("#errorEmail")).to_contain_text("Email inválido")
     expect(page.locator("#errorDireccion")).to_contain_text("Dirección inválida")
 
-    page.screenshot(path="Playwright/Exercises/expects_img/all_red.png")
+    page.screenshot(path="Playwright/Exercises/screenshots/all_red.png")
 
     page.close()
 
