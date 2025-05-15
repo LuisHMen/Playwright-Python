@@ -18,10 +18,10 @@ def test_form1(page: Page):
     page.get_by_role("button", name="Enviar").click()
 
     expect(page.get_by_text("El formulario se ha enviado correctamente.", exact=True)).to_be_visible()
-    page.screenshot(path="Playwright/Exercises/Inputs1_Img/SaveForm.png")
+    page.screenshot(path="Playwright/Exercises/inputs_img/SaveForm.png")
 
     page.get_by_role("button", name="Limpiar").click()
-    page.screenshot(path="Playwright/Exercises/Inputs1_Img/CleanForm.png")
+    page.screenshot(path="Playwright/Exercises/inputs_img/CleanForm.png")
     
     page.close()
 

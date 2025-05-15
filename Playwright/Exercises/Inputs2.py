@@ -10,13 +10,16 @@ def test_form1(page: Page):
     page.set_default_timeout(7000)
 
     # Elementos.
+    # Inputs.
     nombre = page.locator("#nombre")
     apellidos = page.locator("#apellidos")
     telefono = page.locator("#tel")
     email = page.locator("#email")
     direccion = page.locator("#direccion")
+    # Buttons.
     Btn_Enviar = page.get_by_role("button", name="Enviar")
     Btn_Limpiar = page.get_by_role("button", name="Limpiar")
+    # Messages.
     confirmacion = page.get_by_text("El formulario se ha enviado correctamente.", exact=True)
 
     # Acciones.
@@ -31,10 +34,10 @@ def test_form1(page: Page):
     Btn_Enviar.click()
 
     expect(confirmacion).to_be_visible()
-    page.screenshot(path="Playwright/Exercises/Inputs1_Img/SaveForm.png")
+    page.screenshot(path="Playwright/Exercises/inputs_img/SaveForm.png")
 
     Btn_Limpiar.click()
-    page.screenshot(path="Playwright/Exercises/Inputs1_Img/CleanForm.png")
+    page.screenshot(path="Playwright/Exercises/inputs_img/CleanForm.png")
     
     page.close()
 
