@@ -34,10 +34,10 @@ def test_form1(page: Page):
     Btn_Enviar.click()
 
     expect(confirmacion).to_be_visible()
-    page.screenshot(path="Playwright/Exercises/screenshots/SaveForm.png")
+    page.screenshot(path="Playwright/Exercises/forms/screenshots/SaveForm.png")
 
     Btn_Limpiar.click()
-    page.screenshot(path="Playwright/Exercises/screenshots/CleanForm.png")
+    page.screenshot(path="Playwright/Exercises/forms/screenshots/CleanForm.png")
     
     page.close()
 

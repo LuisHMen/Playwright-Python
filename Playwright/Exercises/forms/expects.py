@@ -34,8 +34,8 @@ def test_empty_form(page: Page):
     expect(page.locator("#errorEmail")).to_contain_text("Email inválido")
     expect(page.locator("#errorDireccion")).to_contain_text("Dirección inválida")
 
-    page.screenshot(path="Playwright/Exercises/screenshots/all_red.png")
+    page.screenshot(path="Playwright/Exercises/forms/screenshots/all_red.png")
 
     page.close()
 
-# command to execute: pytest --slowmo 1000 --headed Playwright/Exercises/Expects.py
+# command to execute: pytest --slowmo 1000 --headed Playwright/Exercises/forms/Expects.py

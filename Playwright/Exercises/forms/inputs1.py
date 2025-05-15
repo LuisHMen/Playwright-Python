@@ -21,7 +21,7 @@ def test_form1(page: Page):
     page.screenshot(path="Playwright/Exercises/screenshots/SaveForm.png")
 
     page.get_by_role("button", name="Limpiar").click()
-    page.screenshot(path="Playwright/Exercises/screenshots/CleanForm.png")
+    page.screenshot(path="Playwright/Exercises/forms/screenshots/CleanForm.png")
     
     page.close()
 
