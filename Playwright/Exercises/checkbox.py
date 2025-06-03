@@ -22,10 +22,10 @@ def test_checkbox(playwright: Playwright):
     # Actions
     name.fill("Luis Hernández")
     Telefono.fill("5511223344")
-    expect(option2).to_be_visible()
-    option2.click()
+    expect(option1).to_be_visible()
+    option1.check()
     expect(optionB).to_be_visible()
-    optionB.click()
+    optionB.check()
 
     page.screenshot(path="Playwright/Exercises/screenshots/checkbox.png")
 
