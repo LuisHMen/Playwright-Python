@@ -6,3 +6,5 @@ Playwright/*/__pycache__
 Playwright/*/*.png
 Playwright/*/*/*.png
 Playwright/*/.*
+Playwright/*/*/*/*.webm
+Playwright/*/*/*.webm

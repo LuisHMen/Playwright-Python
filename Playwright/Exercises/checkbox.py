@@ -26,6 +26,9 @@ def test_checkbox(playwright: Playwright):
     option2.click()
     expect(optionB).to_be_visible()
     optionB.click()
+
+    page.screenshot(path="Playwright/Exercises/screenshots/checkbox.png")
+
     # btn_enviar.click()
     btn_limpiar.click()
 
@@ -37,4 +40,4 @@ def test_checkbox(playwright: Playwright):
     context.close()
     browser.close()
 
-# command to execute: pytest Playwright/Exercises/page_context.py
+# command to execute: pytest Playwright/Exercises/checkbox.py
