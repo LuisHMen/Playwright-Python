@@ -8,3 +8,4 @@ Playwright/*/*/*.png
 Playwright/*/.*
 Playwright/*/*/*/*.webm
 Playwright/*/*/*.webm
+Playwright/Exercises/videos/*
