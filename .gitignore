@@ -2,10 +2,8 @@ Python/Jupyter/jp_virtual
 Python/Jupyter/.ipynb_checkpoints
 Python/Django/django_env
 Playwright/vm_practices
-Playwright/*/__pycache__
-Playwright/*/*.png
-Playwright/*/*/*.png
+__pycache__
+*.png
 Playwright/*/.*
-Playwright/*/*/*/*.webm
-Playwright/*/*/*.webm
+*.webm
 Playwright/Exercises/videos/*

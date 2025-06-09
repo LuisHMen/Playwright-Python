@@ -3,7 +3,6 @@
 
 from playwright.sync_api import Playwright, sync_playwright, expect
 
-
 def test_codegen(playwright: Playwright) -> None:
     browser = playwright.chromium.launch(headless=False, slow_mo = 500, args=["--start-maximized"])
     context = browser.new_context() # record_video_dir="Playwright/Exercises/videos/checkbox2"
