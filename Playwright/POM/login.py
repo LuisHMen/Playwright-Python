@@ -1,7 +1,7 @@
-from playwright.sync_api import Playwright, Page, expect
+from playwright.sync_api import Playwright
 from Pages.login_page import Login
 
-# pytest Playwright/POM/E2E/login.py 
+# pytest Playwright/POM/login.py
 
 def test_valid_login(playwright: Playwright):
     browser = playwright.webkit.launch(headless = False, slow_mo = 1000)

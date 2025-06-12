@@ -1,6 +1,5 @@
 import re
 from playwright.sync_api import Page, expect
-from playwright.sync_api import sync_playwright
 
 # command to execute: pytest --slowmo 1000 --headed Playwright/Exercises/Form1.py
 
