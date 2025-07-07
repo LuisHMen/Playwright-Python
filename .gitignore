@@ -7,3 +7,5 @@ __pycache__
 Playwright/*/.*
 *.webm
 Playwright/Exercises/videos/*
+*.zip
+.DS_Store
