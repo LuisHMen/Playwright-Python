@@ -3,7 +3,7 @@ Create virtual machines.
 1. Create the folder where the virtual machine will be.
 2. Create virtual machine: 
    python -m venv vm_name
-3. Enter to the sub-folder bin:
+3. Enter to the sub-folder bin and run:
    source ./bin/activate
 
 Install playwright.
