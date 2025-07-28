@@ -27,7 +27,7 @@ def test_checkbox(playwright: Playwright):
     expect(optionB).to_be_visible()
     optionB.check()
 
-    page.screenshot(path="Playwright/Exercises/screenshots/checkbox.png")
+    page.screenshot(path="Playwright/screenshots/checkbox.png")
 
     # btn_enviar.click()
     btn_limpiar.click()

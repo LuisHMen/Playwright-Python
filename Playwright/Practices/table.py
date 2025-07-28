@@ -37,7 +37,7 @@ def test_search_by_position(playwright: Playwright):
     for i in range (1, 4):
         expect(page.locator(f"//tbody/tr[{i}]/td[3]")).to_have_text("Office Manager")
     
-    page.screenshot(path="Playwright/Exercises/screenshots/table.png")
+    page.screenshot(path="Playwright/Practices/screenshots/table.png")
 
      # ---------------------
     context.close()
