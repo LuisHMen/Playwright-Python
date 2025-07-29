@@ -1,7 +1,7 @@
 - pytest file.py::test_name
 :: Coloca dos puntos 2 veces para indicar la función del archivo py que se va a ejecutar.
 
-- pytest codegen URL
+- playwright codegen URL
 Agrega la URL a trabajar después de "codegen".
 
 - playwright show-trace path/trace.zip
