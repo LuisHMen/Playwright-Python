@@ -8,4 +8,4 @@ Agrega la URL a trabajar después de "codegen".
 Muestra el paso a paso de la ejecución de las pruebas en un "viewer" especial.
 
 - pytest path/file.py -s -v
-Ejecuta el comando con -s -v cuando las pruebas tengan @pytest.mark.
+Ejecuta el comando con -s -v cuando las pruebas tengan @pytest.mark para ver el resultado de cada test.
