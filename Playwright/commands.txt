@@ -2,10 +2,10 @@
 :: Coloca dos puntos 2 veces para indicar la función del archivo py que se va a ejecutar.
 
 - playwright codegen URL
-Agrega la URL a trabajar después de "codegen".
+Agrega la URL del sitio web después de "codegen".
 
 - playwright show-trace path/trace.zip
 Muestra el paso a paso de la ejecución de las pruebas en un "viewer" especial.
 
 - pytest path/file.py -s -v
-Ejecuta el comando con -s -v cuando las pruebas tengan @pytest.mark para ver el resultado de cada test.
+Muestra el resultado de cada test que tenga @pytest.mark.
