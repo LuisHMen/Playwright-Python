@@ -9,3 +9,19 @@ Muestra el paso a paso de la ejecución de las pruebas en un "viewer" especial.
 
 - pytest path/file.py -s -v
 Muestra el resultado de cada test que tenga @pytest.mark.
+
+** CREATE SIMPLE REPORTS **
+
+Install pytest-report:
+- pip install pytest-report
+
+Create a simple report:
+- pytest path/file.py --html=/path/basic-report.html
+
+** CREATE REPORTS with CHARTS **
+
+Install pytest reporter:
+- pip install pytest-reporter-html1
+
+Create the report with charts:
+- pytest path/file.py --template=html1/index.html --report=/path/report-charts.html
