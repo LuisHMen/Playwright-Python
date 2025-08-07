@@ -10,6 +10,9 @@ Muestra el paso a paso de la ejecución de las pruebas en un "viewer" especial.
 - pytest path/file.py -s -v
 Muestra el resultado de cada test que tenga @pytest.mark.
 
+- pip install openpyxl
+Plugin para leer/escribir en archivos Excel.
+
 ** CREATE SIMPLE REPORTS **
 
 Install pytest-report:
