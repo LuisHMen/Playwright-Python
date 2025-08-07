@@ -1,5 +1,6 @@
 from playwright.sync_api import Playwright
 from POM.Pages.login_fixture_page import Login
+from excel.register_form_page import register
 import pytest
 
 # A Python function becomes a pytest fixture when decorated with @pytest.fixture. 
@@ -44,14 +45,29 @@ def session(playwright: Playwright):
     page = context.new_page()
     page.set_default_timeout(7000)
 
-    page.goto("https://qa-practice.netlify.app/auth_ecommerce")
-
     log = Login(page)
 
+    log.navigate("https://qa-practice.netlify.app/auth_ecommerce")
     log.enter_username("admin@admin.com")
     log.enter_password("admin123")
     log.submit_credentials()
     log.valid_login_sucessful("SHOPPING CART")
+
+    # ---------------------
+    yield page
+    context.close()
+    browser.close()
+
+@pytest.fixture(scope="session")
+def set_up_excel(playwright: Playwright):
+    browser = playwright.chromium.launch(headless = False, slow_mo = 700, args=["--start-maximized"])
+    context = browser.new_context(viewport={'width': 1500, 'height': 800})
+    page = context.new_page()
+    page.set_default_timeout(7000)
+
+    excel = register(page)
+
+    excel.navigate("https://qa-practice.netlify.app/register")
 
     # ---------------------
     yield page
