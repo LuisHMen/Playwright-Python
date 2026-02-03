@@ -1,36 +1,19 @@
 from playwright.sync_api import Playwright
-from Pages.login_page import Login
+from pages.login_page import login
 
-# pytest Playwright/POM/login.py
+# pytest Playwright/pom/login.py
 
 def test_valid_login(playwright: Playwright):
-    browser = playwright.webkit.launch(headless = False, slow_mo = 1000)
+    browser = playwright.chromium.launch(headless = False, slow_mo=500)
     page = browser.new_page()
-    page.set_default_timeout(5000)
+    page.set_default_timeout(7000)
 
-    log = Login(page)
-    log.navigate()
-    log.enter_username('standard_user')
-    log.enter_password('secret_sauce')
-    log.submit_credentials()
-    log.valid_login_sucessful('Products')
-
-    page.close()
-    browser.close()
-
-def test_invalid_login(playwright: Playwright):
-    browser = playwright.chromium.launch(headless=False, slow_mo=500)
-    page = browser.new_page()
-    page.set_default_timeout(5000)
-
-    error_message="Epic sadface: Username and password do not match any user in this service"
-
-    log = Login(page)
-    log.navigate()
-    log.enter_username('invalid_user')
-    log.enter_password('invalid_password')
-    log.submit_credentials()
-    log.read_error_message(error_message)
+    log_in = login(page)
+    log_in.navigate("https://www.saucedemo.com")
+    log_in.type_username("standard_user")
+    log_in.type_password("secret_sauce")
+    log_in.submit_credentials()
+    log_in.login_successful("Products")
 
     page.close()
     browser.close()

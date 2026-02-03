@@ -1,3 +1,5 @@
+# THIS FILE IS LINKED TO THE EXCEL FOLDER.
+
 from playwright.sync_api import Playwright
 from POM.Pages.login_fixture_page import Login
 from excel.register_form_page import register

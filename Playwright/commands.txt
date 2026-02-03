@@ -1,3 +1,29 @@
+Pages to automate:
+- https://qa-practice.netlify.app/radiobuttons
+- https://practice-automation.com/iframes/
+- https://www.saucedemo.com/
+
+*** ----- *** INSTALL PLAYWRIGHT *** ----- ***
+
+Create virtual machines.
+
+1. Create the folder where the virtual machine will be.
+2. Create virtual machine: 
+   python -m venv vm_name
+3. Enter to the sub-folder bin and run:
+   source ./bin/activate
+
+Install playwright.
+
+1. Install playwright.
+   pip3 install pytest-playwright
+2. Confirm that playwright is installed.
+   pip list
+3. Install all the playwright complements.
+   playwright install
+
+*** ----- *** COMMANDS *** ----- ***
+
 - pytest file.py::test_name
 :: Coloca dos puntos 2 veces para indicar la función del archivo py que se va a ejecutar.
 
