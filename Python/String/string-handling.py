@@ -1,3 +1,9 @@
+# String are immutable: We cannot change the characters of the string once it's created.
+
+# MULTI LINE
+string3 = """This is a multi-line 
+string."""
+
 # STRING CUT
 # Tomar una muestra específica del texto.
 print("STRING CUT")
